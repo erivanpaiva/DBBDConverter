@@ -1,4 +1,5 @@
-def decbin(num): #função DEC -> BIN
+#function DEC -> BIN
+def decbin(num):
     num_f = float(num)
     num_i = int(num_f)
     tam = len(str(num_i))
@@ -39,10 +40,9 @@ def decbin(num): #função DEC -> BIN
                 break
         total2 = str(total_f)
         return(total1+"."+total2)
-
-#############################################################
-
-def bindec(num): #função BIN -> DEC
+    
+#função BIN -> DEC
+def bindec(num):
     num_f = float(num)
     b = str(int(num_f))
     b = (b[::-1])
@@ -70,8 +70,6 @@ def bindec(num): #função BIN -> DEC
             total3 += (int(resto[y]) * (2**neg))
             neg = neg - 1
         return(total2+total3)
-
-#############################################################
 
 select = input("""--- CONVERSOR BÁSICO ---
 O que gostaria de fazer?
